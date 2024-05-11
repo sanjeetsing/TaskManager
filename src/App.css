@@ -1,38 +1,29 @@
-.App {
+/* App.css */
+.header {
+  background-image: url("https://static.vecteezy.com/system/resources/previews/016/921/110/original/business-task-management-illustration-concept-on-white-background-vector.jpg"); /* Adjust the path based on your project structure */
+  background-size: cover;
+  background-position: center;
+  background-color: #333;
+  color: #333;
+  font-size: 25px;
+  padding: 20px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* App.css */
+.task-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 20px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.task-box {
+  background-image: url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJQA9wMBIgACEQEDEQH/xAAYAAEBAQEBAAAAAAAAAAAAAAAAAQIDB//EABoQAQEBAQEBAQAAAAAAAAAAAAABEUExUSH/xAAZAQEBAQEBAQAAAAAAAAAAAAABAAIDBAb/xAAXEQEBAQEAAAAAAAAAAAAAAAAAAREC/9oADAMBAAIRAxEAPwD2BUV8xHqUB0gVYkVuAVFaQAQKBiACgAoACQUCQAFKjTNFSIqMYYlRplmxqJWWkrnYWKFVjG3VUitxyUFdIBYkVuBQG0ApAAUAFACQAkACpAAipVQFGetX1KzTEqLUYwoy0zWWmb6FGMajrFZjRjnVVIrpARYixoKIsbiFRTAANRACQAQAAgFSQAIRagKVFqVkoiozTESrUYsaZsCjOGNxUiiM1YqK3GVWMq0lVINwKAQoDWoAKACgAIRUSABqKipQUvqdVGaYlRajNaSoqAs0VGKWo0xGusRmqqLHSBQGgqxBqBoZVqJQCAA6gA6gBagEGpRCglQEUBGaioIzWoIICIqItKyrjArTKtwLFZWNwKAYFVkagaEi6ULE00pRNClQ01I01AJaggICJAIKSoIzSJVSgoJaqOEaYlacYGiINxNCRWoFEGgqsqViiLDAogQqyshSiCIAkAgICJAIKSoIyRKrNqKVU0RhG2JVlcOVWlZlVoLFQagVWV1oKJoUqoNQKIFNCQSVASARJRBEBEgEBEVBUlQtRFKJRNJK3K5StSvLKbHSU1mUjes43L9XWFjQxrRlYdTWmsqZQ1ozKrWpdEDqagyaQ0JokommpAmiKiFqQIJCKzaqUqKzv6GkomiLMaiDxctVqLoOsZWANCixRAUGoBUGkogQsAKAEgBIAKBBVAAKICMZ6lQDSUBF/9k="); /* Adjust the path based on your project structure */
+  background-size: cover;
+  background-position: center;
+  width: 600px;
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-left: 10px;
 }

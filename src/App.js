@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+// App.js
+import React from "react";
+import { Provider } from "react-redux";
+import TaskForm from "./components/TaskForm/TaskForm";
+import TaskList from "./components/TaskList/TaskList";
+import TaskDisplay from "./components/TaskDisplay/TaskDisplay"; // Import TaskDisplay component
+import store from "./store/store";
+import "./App.css"; // Import your CSS file for styling
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Provider store={store}>
+      <div className="App">
+        <header className="header">
+          <h1>TaskManager</h1>
+        </header>
+        <div className="task-container">
+          <div className="task-box">
+            <TaskForm />
+          </div>
+          <div className="task-box">
+            <TaskDisplay /> {/* Render TaskDisplay component */}
+          </div>
+        </div>
+      </div>
+    </Provider>
   );
 }
 

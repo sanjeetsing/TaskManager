@@ -1,0 +1,40 @@
+/* Task.css */
+.task {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.task h3 {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.task p {
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.task input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.task button {
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+/* Task.css */
+
+.task.completed {
+  /* Styles for completed tasks */
+  background-color: #d4edda; /* Light green background */
+  color: #155724; /* Dark green text color */
+}
+
+/* Task.css */
+
+.task input[type="checkbox"] {
+  margin-right: 10px;
+}
