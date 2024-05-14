@@ -1,13 +1,17 @@
 // index.js
 import React from "react";
-import { createRoot } from "react-dom/client"; // Update import statement
-import "./index.css";
+import ReactDOM from "react-dom";
+import { Provider } from "react-redux";
 import App from "./App";
+import store from "./store/store";
+import Modal from "react-modal"; // Import react-modal
 
-const root = createRoot(document.getElementById("root")); // Use createRoot from react-dom/client
+// Set the root element for react-modal
+Modal.setAppElement("#root");
 
-root.render(
-  <React.StrictMode>
+ReactDOM.render(
+  <Provider store={store}>
     <App />
-  </React.StrictMode>
+  </Provider>,
+  document.getElementById("root")
 );

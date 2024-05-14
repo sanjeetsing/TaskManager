@@ -1,4 +1,3 @@
-// taskActions.js
 import * as actionTypes from "./actionTypes";
 
 export const addTask = (task) => {
